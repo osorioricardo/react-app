@@ -1,4 +1,5 @@
 import ListGroup from "./components/ListGroup";
+import { AiFillAlipayCircle } from "react-icons/ai";
 
 function App() {
   let items = ["New York", "San Francisco", "Tokyo", "London", "Paris"];
@@ -13,6 +14,7 @@ function App() {
         heading="Cities"
         onSelectItem={handleSelectItem}
       />
+      <AiFillAlipayCircle color="red" size="40px" />
     </div>
   );
 }
