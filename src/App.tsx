@@ -2,9 +2,9 @@ import Button from "./components/Button.tsx";
 
 function App() {
   return (
-    <div className="btn btn-primary">
-      <Button>
-        Hello <span>World</span>
+    <div>
+      <Button color="primary" onClick={() => console.log("Clicked")}>
+        My Button
       </Button>
     </div>
   );
