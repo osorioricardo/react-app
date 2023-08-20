@@ -1,4 +1,5 @@
 import ListGroup from "./components/ListGroup";
+import Button from "./components/Button/Button";
 import { AiFillAlipayCircle } from "react-icons/ai";
 
 function App() {
@@ -9,12 +10,7 @@ function App() {
   };
   return (
     <div>
-      <ListGroup
-        items={items}
-        heading="Cities"
-        onSelectItem={handleSelectItem}
-      />
-      <AiFillAlipayCircle color="red" size="40px" />
+      <Button onClick={() => console.log("Clicked")}>Hello</Button>
     </div>
   );
 }
