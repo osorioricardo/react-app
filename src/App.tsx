@@ -1,4 +1,5 @@
 import Button from "./components/Button.tsx";
+import Alert from "./components/Alert.tsx";
 
 function App() {
   return (
