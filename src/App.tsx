@@ -1,11 +1,11 @@
-import Alert from "./components/Alert";
+import Button from "./components/Button.tsx";
 
 function App() {
   return (
-    <div className="alert alert-primary">
-      <Alert>
+    <div className="btn btn-primary">
+      <Button>
         Hello <span>World</span>
-      </Alert>
+      </Button>
     </div>
   );
 }
