@@ -1,18 +1,18 @@
-import Button from "./components/Button.tsx";
-import Alert from "./components/Alert.tsx";
-import { useState } from "react";
+import ListGroup from "./components/ListGroup";
 
 function App() {
-  const [alertVisible, setAlertVisibility] = useState(false);
+  let items = ["New York", "San Francisco", "Tokyo", "London", "Paris"];
 
+  const handleSelectItem = (item: string) => {
+    console.log(item);
+  };
   return (
     <div>
-      {alertVisible && (
-        <Alert onClose={() => setAlertVisibility(false)}>My alert</Alert>
-      )}
-      <button color="primary" onClick={() => setAlertVisibility(true)}>
-        My Button
-      </button>
+      <ListGroup
+        items={items}
+        heading="Cities"
+        onSelectItem={handleSelectItem}
+      />
     </div>
   );
 }
